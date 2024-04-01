@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.272efc48.css",
+    "main.js": "/static/js/main.7f866c29.js",
+    "static/js/649.cea8919e.chunk.js": "/static/js/649.cea8919e.chunk.js",
+    "static/js/453.9ef67def.chunk.js": "/static/js/453.9ef67def.chunk.js",
+    "static/media/some.mp4": "/static/media/some.9ce45c4c8b7b131d52c7.mp4",
+    "static/media/platy.mp4": "/static/media/platy.580e6b2b4bc5656c99df.mp4",
+    "static/media/Zero.jpeg": "/static/media/Zero.63cd9b84f7445c39af68.jpeg",
+    "static/media/Aboutimage.jpeg": "/static/media/Aboutimage.ae6e28e7a9a1aba297ad.jpeg",
+    "static/media/about2.jpeg": "/static/media/about2.59425ab40673ee562e32.jpeg",
+    "static/media/Telma-Variable.ttf": "/static/media/Telma-Variable.f8b51580efedab159294.ttf",
+    "static/media/Star.png": "/static/media/Star.355409b837c9f18792d1.png",
+    "static/media/footbar.png": "/static/media/footbar.c930c573f62d51e80c15.png",
+    "index.html": "/index.html",
+    "main.272efc48.css.map": "/static/css/main.272efc48.css.map",
+    "main.7f866c29.js.map": "/static/js/main.7f866c29.js.map",
+    "649.cea8919e.chunk.js.map": "/static/js/649.cea8919e.chunk.js.map",
+    "453.9ef67def.chunk.js.map": "/static/js/453.9ef67def.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.272efc48.css",
+    "static/js/main.7f866c29.js"
+  ]
+}
