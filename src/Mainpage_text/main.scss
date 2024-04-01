@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.description {
+    display: flex;
+    font: normal;
+    font-size: large;
+    position: relative;
+
+    .body {
+        max-width: 1200px;
+        display: flex;
+        gap: 50px;
+        position: relative;
+
+        p {
+            margin: 0px;
+
+            &:nth-of-type(1) {
+                font-size: 60px; /* Default font size for the first p element */
+                gap: 8px;
+                line-height: 1.3;
+
+                span {
+                    margin-right: 2.5px;
+                    font-family: Outfit;
+                    line-height: 50px;
+                    font-style: normal;
+                    font-size: 25px; /* Default font size for span */
+                }
+
+                .mask {
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-flex;
+                }
+            }
+
+            &:nth-of-type(2) {
+                width: 60%;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+/* Small devices (phones) */
+@media (min-width: 374px) {
+    .description .body p:nth-of-type(1) {
+        font-size: 40px; /* Adjust font size for small devices */
+        line-height: 1.0;
+
+    }
+    .description .body p:nth-of-type(1) span {
+        font-size: 20px; /* Adjust font size for small devices */
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+    .description .body p:nth-of-type(1) {
+        font-size: 50px; /* Adjust font size for medium devices */
+        line-height: 1.3;
+
+    }
+    .description .body p:nth-of-type(1) span {
+        font-size: 40px; /* Adjust font size for medium devices */
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+    .description .body p:nth-of-type(1) {
+        font-size: 55px; /* Adjust font size for large devices */
+        line-height: 1.3;
+
+    }
+    .description .body p:nth-of-type(1) span {
+        font-size: 35px; /* Adjust font size for large devices */
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+    .description .body p:nth-of-type(1) {
+        font-size: 60px; /* Adjust font size for extra large devices */
+        line-height: 1.3;
+
+    }
+    .description .body p:nth-of-type(1) span {
+        font-size: 40px; /* Adjust font size for extra large devices */
+    }
+}
