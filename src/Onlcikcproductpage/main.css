@@ -1,0 +1,31 @@
+/* Mac Monitor Styles */
+.mac-monitor {
+    width: 600px; /* Adjust according to your design */
+    height: 400px; /* Adjust according to your design */
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden; /* To prevent content overflow */
+}
+
+/* Screen */
+.screen {
+    width: 80%; /* Adjust according to your design */
+    height: 70%; /* Adjust according to your design */
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10% auto;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Stand */
+.stand {
+    width: 20px; /* Adjust according to your design */
+    height: 100px; /* Adjust according to your design */
+    background-color: #999;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -12,6 +12,7 @@ import Appmain_ from "./Appmain_";
 import About from "./ABOUT/About";
 import Contact from "./Contact/Contact"
 import Navbar1 from "./Navbar_small";
+import Productpage from "./Onlcikcproductpage/Productpage";
 function App() {
 
   const [isloading, setisloading] = useState(true)
@@ -57,8 +58,9 @@ function App() {
           <Route path="/" element={<Appmain_/>} />
           <Route path="/second" element={<Scrollingtext/>}/>
           <Route path="/Projects" element={<HoverImageLinks />}>
-            <Route path=":id" element={<HoverImageLinks/>}/>
           </Route>
+          <Route path="/Productpage/:id" element={<Productpage />} />
+
           <Route path="/images_scrool" element={<Scrollering />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact/>}/>

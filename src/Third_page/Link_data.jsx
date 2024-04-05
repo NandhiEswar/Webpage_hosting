@@ -2,7 +2,7 @@ import { useRef , useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 
-const Link = ({ heading, imgSrc, subheading, href }) => {
+const LinkHover = ({ heading, imgSrc, subheading, href }) => {
   const videoRef = useRef(null);
   useEffect(() => {
     const video = videoRef.current;
@@ -103,7 +103,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           transition={{ type: "spring" }}
          
           className="absolute z-0 h-52 w-52 rounded-lg object-cover md:h-48 md:w-64"
-          alt={`Image representing a link for ${heading}`}
+          alt={`Image representing a LinkHover for ${heading}`}
           loop
           autoplay
           muted
@@ -130,4 +130,4 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
     );
 };
   
-export default Link;
+export default LinkHover;
