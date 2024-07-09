@@ -18,7 +18,9 @@ function About() {
   setTimeout(() => {  
     setisloading(false);
   }, 2000);
-  const   words =["About"]
+  const words = ["About"]
+  
+  
   
 
   useEffect(() => {
@@ -29,17 +31,14 @@ function About() {
         scrollTrigger: {
           trigger: image,
           scrub: true,
-          pin: false,
+          start: "top bottom", // Adjust the start and end points as needed
+          end: "bottom top",
         },
       });
   
-      tl.from(image, {
-        yPercent: -2,
-        ease: "none",
-      }).to(image, {
-        yPercent: 20,
-        ease: "none",
-      });
+      tl.fromTo(image, 
+        { y: "10rem"}, 
+        { y: "-10rem" });
     }
   }, []);
   
@@ -132,12 +131,15 @@ function About() {
           </p>
           <div className="grid-container items-center justify-center">
       <div className="cell">
-        <div className="image-container  " >
-          <motion.img
-            src={Aboutimage}
-            alt="Your Image"
-            className=" relative  object-cover md:h-auto md:w-auto h-[600px]"
-          />
+        <div className="image-container  relative overflow-hidden  " >
+        <motion.img
+      src={Aboutimage} // Will initially be null until the image is loaded
+      alt="alt"
+      className='object-cover relative  h-[calc(100%+20rem)] w-full md:h-auto md:w-auto'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    />
         </div>
       </div>
     </div>

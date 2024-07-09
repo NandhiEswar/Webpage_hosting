@@ -1,16 +1,17 @@
-import some from '../Assert/some.mp4'
-import platy from '../Assert/platy.mp4'
-
+import some from '../Assert/some.mp4';
+import platy from '../Assert/platy.mp4';
+import screen from '../Assert/screen.png'
 const data = [
     {
       heading: "React",
-      subheading: "Learn what we do here",
-      imgSrc: some,
+      service_role: "Learn what we do here",
+      imgSrc: platy,
     click: "",
     tools: "react , framer motion , tailwind css, ...",
     descprtion: "we create a some data create this we can also like this web site for you call are some",
-    imgae1: "",
-    image2: ""
+    imgae1: screen,
+    image2: some,
+    deployment:"Yes / still serviceing the avalible on git"
       
     },
     {
