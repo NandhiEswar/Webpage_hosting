@@ -17,7 +17,7 @@ function About() {
   const [isloading, setisloading] = useState(true);
   setTimeout(() => {  
     setisloading(false);
-  }, 2000);
+  }, 1000);
   const words = ["About"]
   
   

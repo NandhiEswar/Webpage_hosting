@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import Main_text from '../src/Mainpage_text/Main_text'
 import Magnetic from './Framermotion/Magentic'
 import { useTransform, useViewportScroll, motion } from 'framer-motion';
-import { Link ,useNavigate,useLocation} from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 
 function Scrollingtext() {
     const { scrollYProgress } = useViewportScroll();

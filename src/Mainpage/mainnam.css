@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  /* Additional styles if needed */
+}
+
+.title {
+  font-family: "Canopee", sans-serif;
+  will-change: transform;
+}

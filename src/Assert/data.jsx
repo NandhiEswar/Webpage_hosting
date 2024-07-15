@@ -9,7 +9,7 @@ const data = [
   {
     heading: "React",
     service_role: "Learn what we do here",
-    imgSrc: platy,
+    imgSrc: some,
     tools: "react, framer motion, tailwind css, ...",
     description: "We create some data to illustrate this example. We can also build a similar website for you. Contact us for more details.",
     image1: screen,
