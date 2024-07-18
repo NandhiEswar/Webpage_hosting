@@ -47,10 +47,11 @@ function Scrollingtext() {
         
          '
             style={{ y: translateY }}>
-            {/* Wrap the text with motion */}
+            {/* Wrap the text with motion */}<Link to='/About'onClick={() => handleNavigation('/About')}>
             <motion.p className='md:p-10 p-5 md:text-3xl  vsm:text-xl font-wixmadefor ' initial={{ x: 0, y: 0 }}>
-                <Link to='/About'onClick={() => handleNavigation('/About')}>About me</Link>
-            </motion.p>
+                About me
+                  </motion.p>
+                  </Link>
         </motion.div>
     </div>
 </Magnetic>

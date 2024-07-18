@@ -45,7 +45,7 @@ function Mainpage() {
   useEffect(() => {
     const animateScroll = () => {
       controls.start({
-        x: direction === 1 ? "80vw" : "-80vw",
+        x: direction === 1 ? "60vw" : "-60vw",
         transition: {
           x: {
             repeat: Infinity,
@@ -63,9 +63,14 @@ function Mainpage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsSplashscreenVisible(false);
-    }, 2000); // Hide splashscreen after 3 seconds
+    }, 2000); // Hide splashscreen after 2 seconds
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    // Automatically scroll the page on load
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
   }, []);
 
   return (
@@ -78,7 +83,7 @@ function Mainpage() {
           <div className="flex flex-col justify-end gap-1">
             <div className="flex bottom-0 right-0 absolute overflow-hidden">
               <motion.h1
-                initial={{ x: direction === 1 ? "80vw" : "-80vw" }} // Adjusted initial position
+                initial={{ x: direction === 1 ? "60vw" : "-60vw" }} // Adjusted initial position
                 animate={controls} // Animate with controls
                 className="relative bottom-0 text-[180px] text-gray-600 overflow-hidden title"
                 style={{ whiteSpace: "nowrap", overflow: "hidden", y }} // Prevent text wrapping

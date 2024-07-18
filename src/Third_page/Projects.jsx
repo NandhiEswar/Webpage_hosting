@@ -28,9 +28,11 @@ const HoverImageLinks = () => {
         ))}
 
         <Magnetic>
+          <Link to={"/Projects"}>
           <button className="border border-gray-500 md:py-8 md:px-14 py-3 px-4 rounded-[60px] mt-10 md:text-2xl font-semibold hover:bg-[#455CE9] hover:text-white">
             View more <sup>12</sup>
-          </button>
+            </button>
+            </Link>
         </Magnetic>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../Framermotion/Magentic';
 import footer from "../Assert/footbar.png"
 import './Fotters.css'
+import { Link } from 'react-router-dom';
 function Fotters() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -29,12 +30,14 @@ function Fotters() {
               </div>
               <motion.div className=' items-center justify-end w-1/2 md:h-1 vsm:h-[0.8px] bg-[#A5A5A5] flex  sm:my-12 container sm:mt-28 
               vsm:my-8'>
+                  <Link to={"/Contact"}>
                   <motion.div style={{ x }} className=' bg-[#334BD3] rounded-full md:h-[100px] md:w-[100px] items-center
                    justify-center flex md:p-24   md:mr-28 p-10 sm:h-[150px] sm:w-[150px]  vsm:h-[100px] vsm:w-[100px] text-center'>
                       <Magnetic>
                           <motion.p initial={{ x: 0, y: 0 }} className=' md:text-lg sm:text-lg  vsm:text-sm '>Get in Touch</motion.p>
                           </Magnetic>
                       </motion.div>
+                      </Link>
               </motion.div>
              
               <div className='flex md:gap-20 sm:gap-16 vsm:gap-7 sm:mt-10 vsm:mt-5 md:flex-row sm:flex-row vsm:flex-col '>
