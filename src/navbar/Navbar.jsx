@@ -16,20 +16,29 @@ function Navbar() {
   
   const handleNavigation = (page) => {
     // Update background color based on the current page
-    if (page === '/about') {
-      setBackgroundColor('#C4C4C4')// Home page background color
-      setTextColor('')
-    } else if(page === '/Contact'){ 
-      setBackgroundColor('#1C1D20')
-      setTextColor('#FFFFFF')
-      
-    } else if (page === '/') {
-      setBackgroundColor('')
-      setTextColor('')
-    } else if (page === '/projects') {
-      setBackgroundColor('#fffff')
-      setTextColor('#00000')
-    }
+     switch (page) {
+    case '/about':
+      setBackgroundColor('#C4C4C4');
+      setTextColor('');
+      break;
+    case '/Contact':
+      setBackgroundColor('#1C1D20');
+      setTextColor('#FFFFFF');
+      break;
+    case '/':
+      setBackgroundColor('');
+      setTextColor('');
+      break;
+    case '/projects':
+      setBackgroundColor('#fffff');
+      setTextColor('#00000');
+      break;
+    default:
+      // For unknown routes
+      setBackgroundColor('#F5F5F5');
+      setTextColor('');
+      break;
+  }
     
     navigate(page); // Navigate to the selected page
     

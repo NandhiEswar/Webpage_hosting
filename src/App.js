@@ -13,6 +13,7 @@ import About from "./ABOUT/About";
 import Contact from "./Contact/Contact";
 import Detail from "./Third_page/Detail";
 import { DataProvider } from '../src/Third_page/DataContext'; // Import DataProvider
+import Pagenotfound from "./Pagenotfound/Pagenotfound";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
             <Route path="/images_scrool" element={<Scrollering />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="*" element={<Pagenotfound/>} />
           </Routes>
           <Fotters />
         </div>

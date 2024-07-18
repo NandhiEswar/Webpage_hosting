@@ -4,35 +4,40 @@ import platy from '../Assert/platy.mp4';
 import screen from '../Assert/screen.png';
 import screen1 from '../Assert/screen1.png';
 import screen2 from '../Assert/scrren2.png';
+import webpagev from '../Assert/webpagev.mov'
 
 const data = [
   {
     heading: "React",
     service_role: "Learn what we do here",
-    imgSrc: some,
+    imgSrc: webpagev,
     tools: "react, framer motion, tailwind css, ...",
     description: "We create some data to illustrate this example. We can also build a similar website for you. Contact us for more details.",
     image1: screen,
     image2: some,
     deployment: "Yes / still servicing, available on GitHub",
     mobile1: screen1,
-    mobile2: screen2
+    mobile2: screen2,
+    color: "#e3e5e7"
+
   },
   {
     heading: "JavaScript",
     subheading: "Master the language",
-    imgSrc: platy,
+    imgSrc: webpagev,
     description: "We create some data to illustrate this example. We can also build a similar website for you. Contact us for more details.",
     image1: screen,
     image2: some,
     deployment: "Yes / still servicing, available on GitHub",
     mobile1: screen1,
-    mobile2: screen2
+    mobile2: screen2,
+    color: "#d6d7dc",
+
   },
   {
     heading: "Android",
     subheading: "We work with great people",
-    imgSrc: platy,
+    imgSrc: webpagev,
     description: "Detailed description about Android.",
     tools: "Kotlin, Java",
     image1: "",
